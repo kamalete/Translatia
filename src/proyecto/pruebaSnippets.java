@@ -16,7 +16,6 @@ public class pruebaSnippets {
 				.uri(URI.create("https://translated-mymemory---translation-memory.p.rapidapi.com/get?langpair="
 						+ mapaLenguages.Mapear().get("GB") + "%7C" + mapaLenguages.Mapear().get("ES") + "&q=" + url.receiver(mensajeSinTransformar)
 						+ "&mt=1&onlyprivate=0&de=a%40b.c"))
-				.header("X-RapidAPI-Key", "4db5d6a097mshbb7bf5e58404068p12d5dbjsn2988cb382843")
 				.header("X-RapidAPI-Host", "translated-mymemory---translation-memory.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody()).build();
 		HttpResponse<String> response = null;
